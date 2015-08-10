@@ -1,5 +1,5 @@
 <?php
 
-	echo 'Eerste lijn php';
+	echo 'Tweede lijn php';
 	
 ?>
