@@ -1,0 +1,37 @@
+<body>
+
+<div class="facade-minimal opdracht-include-require" data-url="http://www.app.local/index.php">
+                        
+                        <header class="group">
+                            <div class="logo">
+                               <a href="#">Daily <span>PHP</span></a>
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Nieuws</a></li>
+                                    <li><a href="#">Onze Redactie</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </header>
+
+
+                            <h1>Nieuws</h1>
+
+          <section class="body group">
+
+                          <?php foreach ( $artikels as $id => $artikel): ?>
+                            <article>
+
+                              <h1><?= $artikel[ 'title' ] ?></h1>
+                              <p><?= $artikel[ 'text' ] ?></p>
+                              
+                                  <?php foreach ( $artikels as $tags => $tag): ?>
+                                  <p><?= print_r ($tag); ?></p>
+                                  <?php endforeach ?>
+                                  
+                              <a href="index.php?artikel=<?= $id ?>">lees meer</a>
+                            </article>
+                          <?php endforeach ?>
+
+          </section>
