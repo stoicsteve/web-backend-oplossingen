@@ -36,7 +36,7 @@
 		{
 			$geselecteerdeBrouwer	=	$_GET[ 'brouwernr' ];
 
-			$bierenQueryString	=	'SELECT bieren.naam
+			$bierenQueryString	=	'SELECT bieren.naam 
 										FROM bieren 
 										WHERE bieren.brouwernr = :brouwernr';
 
